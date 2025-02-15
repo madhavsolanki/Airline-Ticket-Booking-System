@@ -4,7 +4,6 @@
   "description": "A Backend Application for Airline Booking System",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
