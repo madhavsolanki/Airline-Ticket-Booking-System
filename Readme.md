@@ -30,6 +30,10 @@ or ORM will GO here
 
 ### Setup The project
 - Download this template from github and Open it in your favorite text editor.
+- Go inside the folder path and execute the following command: 
+    ```
+      npm install
+    ```
 - In the root Directory create a `.env` file and add the following env variables .
 ```
   PORT=<prot number of your choice>
@@ -41,33 +45,19 @@ ex:
 
 - Inside the `src/config` folder create a file config.json and write the following code :
 
+- go inside the `src` folder an execute the following command:
+ ```
+  npx sequelize-cli init
 ```
-{
-  "development": {
-    "username": "root",
-    "password": "<your_db_password>",
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-```
+- By executing the above command you will get the migrations and seeders folders along with a config.json inside the config folder
 
 - If you are setting up your development enviroment, then write the username of you db and the password of your db and then 
 dialect mention whatever DB you are using ex: mysql, mariadb etc.
 
 - If you're setting up the test ot prod enviroment , make sure yu replace the configs of host url 
+
+- To run server execute
+
+```
+npm run dev 
+````
